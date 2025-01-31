@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+#chat-user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#chat-user-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+#logout-btn {
+    background-color: #ff5c5c;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#messagesContainer {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin-bottom: 10px;
+    max-width: 80%;
+}
+
+.sent {
+    margin-left: auto;
+    background-color: #0084ff;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.received {
+    background-color: #e5e5e5;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.message img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+#chat-input {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+#messageInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none;
+    min-height: 50px;
+}
+
+#send-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#sendBtn, #uploadBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#sendBtn img, #uploadBtn img {
+    width: 25px;
+    height: 25px;
+}
+
+#sendBtn:disabled, #uploadBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

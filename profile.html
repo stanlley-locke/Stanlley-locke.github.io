@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Set Your Profile</h2>
+        <div class="profile-picture">
+            <img id="profileImage" src="default-profile.png" alt="Profile Picture" />
+            <input type="file" id="profilePicInput" accept="image/*" />
+            <label for="profilePicInput" class="custom-file-btn">Choose File</label> <!-- Custom file button -->
+        </div>
+        <div class="profile-info">
+            <textarea id="about" placeholder="Tell us about yourself..."></textarea>
+        </div>
+        <button id="saveProfileBtn">Save Profile</button>
+    </div>
+
+    <script type="module" src="profile.js"></script>
+</body>
+</html>

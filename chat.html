@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Page</title>
+  <link rel="stylesheet" href="chat.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+  <div id="chat-container">
+    <!-- Chat header -->
+    <div id="chat-header">
+      <img id="chat-user-img" src="default-user.png" alt="User Image">
+      <div id="chat-user-name">Username</div>
+      <button id="logout-btn">Logout</button>
+    </div>
+
+    <!-- Messages container -->
+    <div id="messagesContainer"></div>
+
+    <!-- Chat input container -->
+    <div id="chat-input">
+      <textarea id="messageInput" placeholder="Type a message..."></textarea>
+      <div id="send-container">
+        <input type="file" id="fileInput" />
+        <button id="sendBtn" disabled>
+          <img src="send-icon.png" alt="Send">
+        </button>
+        <button id="uploadBtn" disabled>
+          <img src="upload-icon.png" alt="Upload">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-storage.js"></script>
+
+  <script src="chat.js"></script> <!-- Link to JS file -->
+
+</body>
+</html>
